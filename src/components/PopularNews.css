@@ -11,6 +11,10 @@
     margin-bottom: 50px;
 }
 
+
+.section-news {
+    background-color: #013220 !important;
+}
 .section-title {
     font-size: 24px;
     font-weight: bold;
@@ -59,7 +63,13 @@
     flex: 1; /* Image takes the left half */
     overflow: hidden;
 }
-
+.news-card {
+    border-radius: 25px;
+}
+.news-btn {
+    border-radius: 10px;
+    background-color: #013220 !important;
+}
 .news-image img {
     height: 100%;
     object-fit: cover;

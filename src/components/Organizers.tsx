@@ -27,7 +27,7 @@ const organizerLogos = [
 export default class Organizers extends Component {
   render() {
     return (
-      <div className="organizers-section">
+      <section className="organizers-section">
         <Container fluid>
           {/* Title at the top */}
           <Row>
@@ -73,7 +73,7 @@ export default class Organizers extends Component {
             </Col>
           </Row>
         </Container>
-      </div>
+      </section>
     );
   }
 }

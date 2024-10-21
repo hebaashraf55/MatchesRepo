@@ -16,6 +16,10 @@
     height: 100%; 
 }
 
+.section-about {
+    background-color: #013220 !important;
+}
+
 .about-title {
     font-size: 50px;
     font-weight: 500;

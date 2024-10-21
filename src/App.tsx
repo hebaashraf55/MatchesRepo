@@ -14,7 +14,7 @@ import About from "./components/About";
 
 function App() {
   return (
-    <>
+    <main className="main">
       <Navbar />
       <HeroSection />
       <SkillAndSpeedSection />
@@ -26,7 +26,7 @@ function App() {
       <About />
       <Organizers />
       <Footer />
-    </>
+    </main>
   );
 }
 

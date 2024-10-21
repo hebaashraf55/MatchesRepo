@@ -33,9 +33,10 @@ const PopularNews: React.FC = () => {
     ];
 
     return (
-        <div className="container mt-4">
+     <section className='section-news'>
+           <div className="container mt-4">
             {/* Section Header */}
-            <Row className="align-items-center mb-4 section-header">
+            <Row  className="align-items-center mb-4 section-header">
                 <Col xs={8} md={6} className='text-start'>
                     <h2 className="section-title">Popular News</h2>
                 </Col>
@@ -54,7 +55,7 @@ const PopularNews: React.FC = () => {
                             <Card.Text>{newsItems[0].description}</Card.Text>
                             <div className="d-flex justify-content-between align-items-center mb-4">
                                 <span>{newsItems[0].date}</span>
-                                <Button variant="success">Read More</Button>
+                                <Button className='news-btn' variant="success">Read More</Button>
                             </div>
                         </div>
                     </Card>
@@ -79,6 +80,7 @@ const PopularNews: React.FC = () => {
                 </Col>
             </Row>
         </div>
+     </section>
     );
 };
 

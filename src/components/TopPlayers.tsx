@@ -11,7 +11,7 @@ const TopPlayers: React.FC = () => {
     ];
 
     return (
-        <div className="top-players-section">
+        <section className="top-players-section">
             <div className="section-header">
                 <h1 className="section-title">Top Players</h1>
                 <Button variant="" className="see-all-btn">
@@ -30,7 +30,7 @@ const TopPlayers: React.FC = () => {
                 </Col>
             ))}
         </Row>
-    </div>
+    </section>
     );
 };
 

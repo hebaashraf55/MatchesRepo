@@ -10,8 +10,7 @@ import TopPlayers from './TopPlayers';
 
 const Matches: React.FC = () => {
     return (
-        <>
-        <div className="matches-section">
+        <section className="matches-section">
             <h1 className="section-title">Matches</h1>
 
             <div className="matches-group">
@@ -30,10 +29,7 @@ const Matches: React.FC = () => {
                 </div>
             </div>
             <TopPlayers />
-        </div>
-
-        
-        </>
+        </section>  
     );
 };
 

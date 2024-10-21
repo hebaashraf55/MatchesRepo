@@ -6,8 +6,7 @@ import  pool from '../assets/Pool.png'
 
 const Hero: React.FC = () => {
   return (
-    <>
-    <div className="hero-section">
+    <section className="hero-section">
       <Container fluid>
         <Row className="align-items-center">
           <Col md={6} className="hero-image-col">
@@ -20,8 +19,7 @@ const Hero: React.FC = () => {
           </Col>
         </Row>
       </Container>
-    </div>
-    </>
+    </section>
   );
 };
 
