@@ -1,0 +1,98 @@
+/* Top Players Section */
+.top-players-section {
+    padding: 50px 50px;
+    background-image: url('../assets/Sparks.png');
+}
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+/* Title Styling */
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+    color: white;
+}
+/* Button Styling */
+.see-all-btn {
+    font-size: 1rem;
+    padding: 8px 16px;
+    border-radius: 5px;
+    background-color: #BF9447;
+}
+
+
+/* Player Card Styling */
+.player-card {
+    background-image: url('../assets/Top-Player-Full.png');
+    position: relative;
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Hover effect for cards */
+.player-card:hover {
+    transform: scale(1.05);
+}
+
+/* Player Photo */
+.player-photo {
+    height: 60%; /* Cover more than half the card */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.player-photo img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* Card Content */
+.card-content {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.player-name {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.player-info {
+    margin: 0;
+}
+
+/* Ensure cards stack on smaller screens */
+.player-col {
+    margin-bottom: 24px;
+}
+
+@media (max-width: 576px) {
+    .player-card {
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    /* Align title and button vertically on smaller screens */
+    .section-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .see-all-btn {
+        margin-top: 10px;
+    }
+}

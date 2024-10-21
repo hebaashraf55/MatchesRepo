@@ -1,0 +1,46 @@
+/* HeroSection.css */
+.hero-section {
+    position: relative;
+    height: 100vh; /* Full height */
+    background-image: url('../assets/MainHeaderBG.png'); /* Background image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  
+  .hero-image-col {
+    position: relative;
+  }
+  
+  .hero-image {
+  
+    width: 100%;
+    height: auto;
+    /* Add any additional styles for the image, such as border-radius or shadow */
+    
+  }
+  
+  .text-section {
+    padding: 20px; /* Add padding */
+    text-align: left;
+    z-index: 2; /* Make sure text is above any background layers */
+  }
+  
+  .hero-subtitle {
+    font-size: 1.5rem;
+  }
+  
+  .hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: orange;
+  }
+  
+  .hero-location {
+    font-size: 1.25rem;
+    margin-top: 1rem;
+  }
+  

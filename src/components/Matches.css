@@ -1,0 +1,83 @@
+/* Matches.css */
+
+/* Section with background image */
+.matches-section {
+    background-image: url('../assets/Backgound.png'); /* Background image */
+    background-size: cover;
+    background-position: center;
+    padding: 60px 40px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Section title */
+.section-title {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+/* Matches group (Live and Upcoming) */
+.matches-group {
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 40px;
+}
+
+/* Group title (Live / Upcoming) */
+.group-title {
+    font-size: 1.75rem;
+    color: white;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Match images */
+.match-images {
+    display: flex;
+    gap: 50px; /* Space between images */
+    
+}
+
+.match-images img {
+    width: 48%; /* Each image takes half the row */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+}
+
+/* Responsive Design */
+
+/* For tablets and smaller screens */
+@media (max-width: 768px) {
+    .match-images {
+        flex-direction: column;
+        gap: 15px; /* Reduce gap between images */
+    }
+
+    .match-images img {
+        width: 100%; /* Full width on smaller screens */
+    }
+
+    .section-title {
+        font-size: 2rem; /* Adjust title size */
+    }
+
+    .group-title {
+        font-size: 1.5rem;
+    }
+}
+
+/* For mobile screens */
+@media (max-width: 576px) {
+    .section-title {
+        font-size: 1.75rem; /* Smaller section title */
+    }
+
+    .group-title {
+        font-size: 1.25rem; /* Smaller group title */
+    }
+}

@@ -1,0 +1,16 @@
+.footer {
+  background-image: url('../assets/JeddahSkyline.png'); /* Path to your footer image */
+  background-size: cover; 
+  background-color: #013220;          /* Cover the entire footer area */
+  background-position: center;      /* Center the background image */
+  height: 500px;                   /* Set the height of the footer */
+  display: flex;                   /* Use flexbox for alignment */
+  justify-content: center;         /* Center horizontally */
+  align-items: center;             /* Center vertically */
+  color: white;                    /* Text color, change as needed */
+}
+
+.footer-content {
+  text-align: center;              /* Center align text content */
+  padding: 10px;                  /* Add some padding for better spacing */
+}

@@ -1,0 +1,86 @@
+/* Custom Navbar Styles */
+.custom-navbar {
+  background-color:  rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  padding: 10px ;
+  border-radius: 8px;
+  transition: 0.3s ease-in-out;
+}
+
+/* To hide the navbar */
+.hidden {
+  transform: translateY(-100%); /* Move the navbar up out of view */
+}
+/* Logo Styling */
+.custom-logo {
+  height: 40px;
+  width: auto;
+  max-height: 80px;
+}
+
+/* Navigation Links Styling */
+.nav-item {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-item:hover {
+  color: orange;
+  text-decoration: underline;
+}
+
+/* Active Link Styling */
+.active-link {
+  color: orange;
+  text-decoration: underline;
+}
+
+.nav-item.nav-link:hover {
+  color: orange !important;
+  text-decoration: underline;
+}
+
+/* Translation Button */
+.translation-button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: bold;
+}
+
+.arrow {
+  font-size: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .navbar-nav {
+    display: none; /* Hide the navigation links */
+  }
+
+  .dropdown {
+    display: inline-block; /* Show the dropdown button */
+  }
+
+  /* Center navbar content on smaller screens */
+  .navbar-collapse {
+    text-align: center;
+  }
+
+  /* Show the logo */
+  .custom-logo {
+    display: block;
+  }
+
+  .translation-button {
+    margin-top: 15px;
+  }
+}
+/* Hide the dropdown menu on large screens */
+@media (min-width: 992px) {
+  .dropdown {
+    display: none; /* Hide the dropdown button */
+  }
+}

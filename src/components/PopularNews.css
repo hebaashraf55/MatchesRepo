@@ -1,0 +1,111 @@
+/* PopularNews.css */
+
+.container {
+    padding: 40px ; /* Add padding around the container */
+    justify-content: space-between;
+    /* background: url('../assets/Backgound.png'); */
+}
+
+/* Section Header */
+.section-header {
+    margin-bottom: 50px;
+}
+
+.section-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    text-align: left;
+    color:black;
+}
+
+/* See More Button */
+.see-more-btn {
+    background-color: #BF9447;
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+
+.see-more-btn:hover {
+    background-color: darkorange;
+}
+
+/* Large Card: Takes Half the Container */
+.large-card {
+    width: 100%;
+    height: 100%; /* Full height of its column */
+    overflow: hidden;
+    font-size: 20px;
+    color: green;
+    
+}
+
+/* Small Cards: Each Take Half of the Remaining Column */
+.small-card {
+    flex: 1; /* Ensure equal height distribution */
+    display: flex;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* Hide the "Read More" Button on Larger Screens */
+.read-more-btn {
+    display: none;
+}
+/* Image Section for Small Cards */
+.news-image {
+    flex: 1; /* Image takes the left half */
+    overflow: hidden;
+}
+
+.news-image img {
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+/* Text Section for Small Cards */
+.text-content {
+    width: 80%;
+    flex: 1; /* Text takes the right half */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Equal Spacing Between Small Cards */
+.mb-3 {
+    margin-bottom: 1rem !important;
+}
+
+
+
+@media (max-width: 768px) {
+    /* Stack the Cards on Smaller Screens */
+    .large-card {
+        margin-bottom: 20px;
+    }
+
+    .small-card {
+        flex-direction: column;
+    }
+
+    .news-image {
+        height: 200px; /* Adjust image height */
+    }
+    .read-more-btn {
+        display: inline-block;
+        margin-top: 10px;
+    }
+
+    .text-content {
+        margin-top: 15px;
+    }
+}
+
+
+
+
+
