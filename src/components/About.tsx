@@ -23,7 +23,7 @@ const About: React.FC = () => {
                     Morbi tincidunt dui vel tortor scelerisque, 
                     nec maximus lorem pretium.
                 </p>
-                <button className="read-more-btn">Read More</button>
+                <button className="read-more-btn success">Read More</button>
             </div>
 
             {/* Right Div with Two Overlapping Images */}

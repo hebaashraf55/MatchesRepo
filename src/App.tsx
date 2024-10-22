@@ -4,12 +4,13 @@ import Organizers from "./components/Organizers";
 import './App.css'
 import HeroSection from "./components/HeroSection";
 import SkillAndSpeedSection from "./components/SkillAndSpeedSection";
-import TopPlayers from "./components/TopPlayers";
+
 import PopularNews from "./components/PopularNews";
 import Matches from "./components/Matches";
 import Navbar from "./components/Navbar";
 import ParticipantsSection from "./components/ParticipantsSection";
 import About from "./components/About";
+import Gallery from "./components/Gallery";
 
 
 function App() {
@@ -17,13 +18,14 @@ function App() {
     <main className="main">
       <Navbar />
       <HeroSection />
-      <SkillAndSpeedSection />
+      {/* <SkillAndSpeedSection /> */}
       <Matches />
       {/* <TopPlayers /> */}
       
       <PopularNews />
-      <ParticipantsSection />
+      {/* <ParticipantsSection /> */}
       <About />
+      <Gallery />
       <Organizers />
       <Footer />
     </main>

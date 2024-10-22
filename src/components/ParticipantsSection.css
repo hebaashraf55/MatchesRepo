@@ -1,6 +1,7 @@
 .participants-section {
-    padding: 50px 0; /* Space around the section */
-    height: 4000px;
+    padding: 5px; /* Space around the section */
+ 
+    height: 400px;
     background-image: url('../assets/Sparks.png');
     background-size: cover;
     background-position: center;
@@ -10,10 +11,11 @@
     display: flex;
     justify-content: center; /* Center the arrows vertically */
     align-items: center; /* Center the arrows vertically */
+
   }
   
   .arrow {
-    width: 30px; /* Adjust as needed */
+    width: 15px; /* Adjust as needed */
     height: auto; /* Maintain aspect ratio */
     display: none; /* Hidden by default */
   }
@@ -21,13 +23,15 @@
   .participants-col {
     display: flex;
     justify-content: center; /* Center the participant images */
-    margin: 10px;
+    margin: 50px;
     width: 20%;
+ 
   }
   
   .participants-row {
     display: flex;
     justify-content: space-between; /* Space between participant images */
+    gap: 50px;
     flex-wrap: wrap; /* Allow wrapping on smaller screens */
   }
   

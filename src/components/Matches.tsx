@@ -6,11 +6,14 @@ import liveMatch1 from '../assets/FullLiveMatch.png';
 import liveMatch2 from '../assets/FullLiveMatch.png';
 import upcomingMatch1 from '../assets/FullUpcomingMatch.png';
 import upcomingMatch2 from '../assets/FullUpcomingMatch.png';
-import TopPlayers from './TopPlayers';
+
+import SkillAndSpeedSection from './SkillAndSpeedSection';
 
 const Matches: React.FC = () => {
     return (
+        
         <section className="matches-section">
+            <SkillAndSpeedSection />
             <h1 className="section-title">Matches</h1>
 
             <div className="matches-group">
@@ -28,7 +31,6 @@ const Matches: React.FC = () => {
                     <img src={upcomingMatch2} alt="Upcoming Match 2" />
                 </div>
             </div>
-            <TopPlayers />
         </section>  
     );
 };

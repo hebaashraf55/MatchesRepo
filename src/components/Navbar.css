@@ -1,8 +1,8 @@
 /* Custom Navbar Styles */
 .custom-navbar {
-  background-color:  rgba(255, 255, 255, 0.5);
+  background-color:  black;
   backdrop-filter: blur(10px);
-  padding: 10px ;
+  padding: 10px;
   border-radius: 8px;
   transition: 0.3s ease-in-out;
 }
@@ -15,7 +15,7 @@
 .custom-logo {
   height: 40px;
   width: auto;
-  max-height: 80px;
+  max-height: 50px;
 }
 
 /* Navigation Links Styling */

@@ -1,7 +1,8 @@
 import React from 'react';
 import { Button, Card, Col, Row } from 'react-bootstrap';
 import './TopPlayers.css'; // Import the CSS file
-import player from '../assets/Top-Player-Photo.png'
+import player from '../assets/Top-Player-Full.png';
+import crown from '../assets/Top-Player-Photo.png'
 
 const TopPlayers: React.FC = () => {
     const players = [
@@ -18,14 +19,14 @@ const TopPlayers: React.FC = () => {
                     See All Players
                 </Button>
             </div>
-        <Row className="justify-content-center">
+        <Row className="justify-content-center mb-4">
             {players.map((player, index) => (
                 <Col key={index} xs={12} sm={6} md={4} className="mb-4">
                     <Card className="player-card">
                         <div className="player-photo">
+                            <img src={crown} alt="Crown" className="crown-photo" />
                             <img src={player.photo} alt={player.name} />
                         </div>
-                        
                     </Card>
                 </Col>
             ))}

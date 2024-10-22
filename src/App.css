@@ -5,7 +5,8 @@
   }
 
   .main {
-    background-color: #013220 !important;
+    /* background-color: #013220 !important; */
+    background: url('./assets/Backgound.png') !important;
 }
 body{
   font-family: "Roboto", sans-serif !important;

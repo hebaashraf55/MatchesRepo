@@ -2,9 +2,12 @@
 
 /* Section with background image */
 .matches-section {
-    background-image: url('../assets/Backgound.png'); /* Background image */
-    background-size: cover;
-    background-position: center;
+    /* background-image: url('../assets/SaudiFlag.png'); 
+    background-size: 800px 900px;
+    background-position-x: left ;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(20px); */
     padding: 60px 40px;
     min-height: 100vh;
     display: flex;

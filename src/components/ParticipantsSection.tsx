@@ -2,12 +2,12 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import leftArrow from '../assets/LeftSliderArrow.png'; // Update with the actual path
 import rightArrow from '../assets/PlayIcon2.png'; // Update with the actual path
-import participant1 from '../assets/ParticipantFull2.png'; // Update with actual participant images
-import participant2 from '../assets/ParticipantFull3.png';
+import participant1 from '../assets/ParticipantFull4.png'; // Update with actual participant images
+import participant2 from '../assets/ParticipantFull4.png';
 
 const ParticipantsSection: React.FC = () => {
   return (
-    <section className="participants-section">
+    <section className="participants-section m-5 p-5 justify-content-between">
       <Container fluid>
         <Row className="align-items-center">
           {/* Left Arrow */}
@@ -22,13 +22,6 @@ const ParticipantsSection: React.FC = () => {
                 <img
                   src={participant1}
                   alt="Participant 1 - Full View"
-                  className="participant-image"
-                />
-              </Col>
-              <Col xs={6} md={2} className="participant-col">
-                <img
-                  src={participant2}
-                  alt="Participant 2 - Full View"
                   className="participant-image"
                 />
               </Col>

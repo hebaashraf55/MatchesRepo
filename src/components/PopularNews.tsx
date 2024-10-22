@@ -6,6 +6,9 @@ import './PopularNews.css'; // Import the CSS file
 import news1Photo from '../assets/NewsImageFull.png';
 import news2Photo from '../assets/SideVideoCover2.png';
 import news3Photo from '../assets/SideVideoCover2.png';
+import ParticipantsSection from './ParticipantsSection';
+import TopPlayers from './TopPlayers';
+
 
 const PopularNews: React.FC = () => {
     const newsItems = [
@@ -33,11 +36,12 @@ const PopularNews: React.FC = () => {
     ];
 
     return (
-     <section className='section-news'>
-           <div className="container mt-4">
+     <section className='section-news mt-4'>
+        <TopPlayers />
+           <div className="container mt-4 ">
             {/* Section Header */}
             <Row  className="align-items-center mb-4 section-header">
-                <Col xs={8} md={6} className='text-start'>
+                <Col xs={8} md={6} >
                     <h2 className="section-title">Popular News</h2>
                 </Col>
                 <Col xs={4} md={6} className="text-end">
@@ -47,7 +51,7 @@ const PopularNews: React.FC = () => {
 
             {/* News Cards */}
             <Row>
-                <Col md={7} className="mb-3">
+                <Col md={7} className="mb-4">
                     <Card className="news-card large-card">
                         <Card.Img variant="top" src={newsItems[0].photo} />
                         <div className="p-2 mt-3">
@@ -79,6 +83,8 @@ const PopularNews: React.FC = () => {
                     ))}
                 </Col>
             </Row>
+            <ParticipantsSection />
+           
         </div>
      </section>
     );

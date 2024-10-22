@@ -1,13 +1,17 @@
 /* Top Players Section */
 .top-players-section {
-    padding: 50px 50px;
-    background-image: url('../assets/Sparks.png');
+    padding: 80px 80px;
+    background-image: url('../assets/group.png') ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+
 }
 .section-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 /* Title Styling */
@@ -31,9 +35,9 @@
     background-image: url('../assets/Top-Player-Full.png');
     position: relative;
     border: none;
-    border-radius: 15px;
+    border-radius: 20px;
     overflow: hidden;
-    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease-in-out;
 }
 
@@ -44,25 +48,36 @@
 
 /* Player Photo */
 .player-photo {
+    position: relative;
     height: 60%; /* Cover more than half the card */
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    margin-bottom: 15px;
+
+}
+
+.crown-photo {
+    position: absolute;
+    top: -5px; /* Adjust to overlap the card */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    z-index: 1; /* Ensure crown stays on top */
 }
 
 .player-photo img {
     width: 100%;
     height: auto;
     object-fit: cover;
-    border-radius: 15px;
+
 }
 
 /* Card Content */
 .card-content {
     text-align: center;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .player-name {
