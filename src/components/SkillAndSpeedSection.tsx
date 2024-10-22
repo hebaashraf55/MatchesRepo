@@ -8,6 +8,7 @@ import photo from '../assets/Photo.png'
 
 const SkillAndSpeedSection: React.FC = () => {
   return (
+
     <section className="skill-and-speed-section">
       <Container fluid>
         <Row className="align-items-center">
@@ -21,6 +22,7 @@ const SkillAndSpeedSection: React.FC = () => {
         </Row>
       </Container>
     </section>
+
   );
 };
 

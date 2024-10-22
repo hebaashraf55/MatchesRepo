@@ -18,12 +18,14 @@ function App() {
     <main className="main">
       <Navbar />
       <HeroSection />
-      {/* <SkillAndSpeedSection /> */}
-      <Matches />
+
+        <SkillAndSpeedSection />
+        <Matches />
+
       {/* <TopPlayers /> */}
       
       <PopularNews />
-      {/* <ParticipantsSection /> */}
+      <ParticipantsSection />
       <About />
       <Gallery />
       <Organizers />

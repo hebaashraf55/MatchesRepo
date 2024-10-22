@@ -1,10 +1,13 @@
 .participants-section {
-    padding: 5px; /* Space around the section */
- 
+    padding: 40px 50px; /* Space around the section */
+    margin: 50px;
     height: 400px;
-    background-image: url('../assets/Sparks.png');
+    gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+    /* background-image: url('../assets/Sparks.png');
     background-size: cover;
-    background-position: center;
+    background-position: center; */
   }
   
   .arrow-col {
@@ -15,7 +18,7 @@
   }
   
   .arrow {
-    width: 15px; /* Adjust as needed */
+    width: 10px; /* Adjust as needed */
     height: auto; /* Maintain aspect ratio */
     display: none; /* Hidden by default */
   }
@@ -31,7 +34,7 @@
   .participants-row {
     display: flex;
     justify-content: space-between; /* Space between participant images */
-    gap: 50px;
+    gap: 30px;
     flex-wrap: wrap; /* Allow wrapping on smaller screens */
   }
   
@@ -42,7 +45,7 @@
   }
   
   .participant-image {
-    max-width: 50%; /* Responsive images */
+    max-width: 20%; /* Responsive images */
     height: auto; /* Maintain aspect ratio */
   }
   
@@ -57,7 +60,7 @@
     }
   
     .participant-col {
-      margin: 5px 0; /* Space between images when stacked */
+      margin: 5px 10px; /* Space between images when stacked */
       width: 100%; /* Full width for each participant image */
     }
   }

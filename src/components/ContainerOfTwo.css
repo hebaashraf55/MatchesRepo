@@ -1,0 +1,19 @@
+.container {
+    background-image: url('../assets/SaudiFlag.png');
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .component {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    text-align: center;
+  }
+  

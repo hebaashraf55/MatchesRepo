@@ -42,7 +42,7 @@ const PopularNews: React.FC = () => {
             {/* Section Header */}
             <Row  className="align-items-center mb-4 section-header">
                 <Col xs={8} md={6} >
-                    <h2 className="section-title">Popular News</h2>
+                    <h2 className="section-title text-start">Popular News</h2>
                 </Col>
                 <Col xs={4} md={6} className="text-end">
                     <Button className="see-more-btn">See More</Button>
@@ -83,7 +83,7 @@ const PopularNews: React.FC = () => {
                     ))}
                 </Col>
             </Row>
-            <ParticipantsSection />
+            {/* <ParticipantsSection /> */}
            
         </div>
      </section>
