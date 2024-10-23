@@ -63,12 +63,17 @@
   gap: 5px;
   font-weight: bold;
   margin-left: auto;
+  background-color: darkorange;
+  color: #ffffff !important;
+  width: 3rem !important;
 }
 .translation-button:hover{
-  background-color: darkorange;
+  background-color: black;
 }
 .arrow {
-  font-size: 10px;
+  font-size: 15px !important;
+  color: #ffffff !important;
+  margin-inline: 0.6rem !important;
 }
 
 /* Responsive Styles */
