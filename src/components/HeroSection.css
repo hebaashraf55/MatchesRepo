@@ -2,7 +2,7 @@
 .hero-section {
     position: relative;
     height: 100vh; /* Full height */
-    background-image: url('../assets/MainHeaderBG.png'); /* Background image */
+    background-image: url('../assets/MainHeaderFabricLayout.png'); /* Background image */
     background-size: cover;
     background-position: center;
     display: flex;

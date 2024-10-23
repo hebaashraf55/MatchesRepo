@@ -6,8 +6,8 @@ import './PopularNews.css'; // Import the CSS file
 import news1Photo from '../assets/NewsImageFull.png';
 import news2Photo from '../assets/SideVideoCover2.png';
 import news3Photo from '../assets/SideVideoCover2.png';
-import ParticipantsSection from './ParticipantsSection';
-import TopPlayers from './TopPlayers';
+// import ParticipantsSection from './ParticipantsSection';
+
 
 
 const PopularNews: React.FC = () => {
@@ -37,24 +37,24 @@ const PopularNews: React.FC = () => {
 
     return (
      <section className='section-news mt-4'>
-        <TopPlayers />
+        {/* <TopPlayers /> */}
            <div className="container mt-4 ">
             {/* Section Header */}
             <Row  className="align-items-center mb-4 section-header">
                 <Col xs={8} md={6} >
                     <h2 className="section-title text-start">Popular News</h2>
                 </Col>
-                <Col xs={4} md={6} className="text-end">
+                <Col xs={6} md={6} className="text-end">
                     <Button className="see-more-btn">See More</Button>
                 </Col>
             </Row>
 
             {/* News Cards */}
-            <Row>
-                <Col md={7} className="mb-4">
+            <Row className="g-4">
+                <Col xs={12} md={12} lg={7} className="mb-4">
                     <Card className="news-card large-card">
                         <Card.Img variant="top" src={newsItems[0].photo} />
-                        <div className="p-2 mt-3">
+                        <div className="p-2 mt-3 text-content-1">
                             <Card.Title as="h3">{newsItems[0].title}</Card.Title>
                             <Card.Text>{newsItems[0].description}</Card.Text>
                             <div className="d-flex justify-content-between align-items-center mb-4">
@@ -65,7 +65,7 @@ const PopularNews: React.FC = () => {
                     </Card>
                 </Col>
 
-                <Col md={5} className="d-flex flex-column justify-content-between mb-3">
+                <Col xs={12} md={12} lg={5} className="d-flex flex-column justify-content-between mb-3">
                     {newsItems.slice(1).map((news, index) => (
                         <Card key={index} className="news-card small-card flex-row mb-4">
                             <div className="news-image">
@@ -83,7 +83,6 @@ const PopularNews: React.FC = () => {
                     ))}
                 </Col>
             </Row>
-            {/* <ParticipantsSection /> */}
            
         </div>
      </section>

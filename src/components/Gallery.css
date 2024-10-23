@@ -1,40 +1,92 @@
-/* Gallery Section */
+/* Gallery Section Styles */
 .gallery-section {
+  position: relative;
+  padding: 40px ;
+  margin-bottom: 20px;
+  height: 100vh;
+  background-image: url('../assets/Ellipse9.png'); /* Background photo */
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 20px; /* Space between title and background */
-  margin: 40px 0;
-  width: 100%;
-  height: 100vh;
-}
-/* Title */
-.gallery-title {
-  font-size: 36px;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin: 0;
-  color: #e8e1e1;
+  align-items: left;
+  justify-content: center;
 }
 
-/* Background Image Div */
-/* Background Image Div */
-.gallery-image {
-  width: 100%;
-  height: 400px; /* Adjust as needed */
-  background-image: url('../assets/Galery.png'); /* Replace with your image */
-  background-size: cover;
-  background-position: center;
-  border-radius: 12px; /* Optional: Rounded corners */
-  box-shadow: 0 4px 8px rgba(235, 232, 232, 0.1); /* Optional: Subtle shadow */
+/* Header Styling */
+.gallery-header {
+  font-size: 48px;
+  color: #fff;
+  margin-bottom: 60px;
+  margin-left: 50px;
+  text-align: start !important;
 }
+
+/* Gallery Container */
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 2x2 grid */
+  gap: 20px;
+  width: 100%;
+  margin-left: 50px
+}
+
+/* Gallery Item Styling (Triangular Shape) */
+.gallery-item {
+  position: relative;
+  width: 100%;
+  padding-top: 100%; /* Make it a square */
+  overflow: hidden;
+  border-radius: 30px;
+}
+
+/* Image Styling inside the Triangle */
+.gallery-item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+
+}
+
+.triangle-bottom {
+  clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+  
+}
+/* Image 2 - Triangle with Base on the Right */
+.triangle-right {
+  clip-path: polygon(50% 100%, 0% 0%, 100% 0%);
+}
+/* Image 3 - Triangle with Base on the Left */
+.triangle-left {
+  clip-path: polygon(100% 0%, 0% 50%, 100% 100%);
+}
+
+/* Image 4 - Triangle with Base at the Top */
+.triangle-top {
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+/* Example: Rotate and Scale Image 1 */
+.triangle-bottom img {
+  
+  transform: rotate(10deg) scale(1.2); /* Adjust rotation and scale */
+}
+
+
+
+
 /* Responsive Design */
 @media (max-width: 768px) {
-  .gallery-background {
-      height: 300px; /* Adjust height for smaller screens */
+  .gallery-container {
+    grid-template-columns: 1fr; /* Stack images in one column */
+    width: 80%;
   }
 
-  .gallery-title {
-      font-size: 28px;
+  .gallery-header {
+    font-size: 36px;
   }
 }

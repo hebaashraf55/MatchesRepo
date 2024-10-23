@@ -9,7 +9,7 @@ import {
   Dropdown,
 } from "react-bootstrap";
 import "./Navbar.css"; // Custom CSS for styling
-import logo from "../assets/Logo.png";
+import logo from "../assets/Logo-02.png";
 
 export default class CustomNavbar extends Component {
   render() {

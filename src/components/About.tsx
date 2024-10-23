@@ -27,9 +27,9 @@ const About: React.FC = () => {
             </div>
 
             {/* Right Div with Two Overlapping Images */}
-            <div className="about-images">
+            <div className="about-images d-flex justify-content-center">
                 <img src={aboutImage1} className="about-img img1" alt="About 1" />
-                <img src={aboutImage2} className="about-img img2" alt="About 2" />
+                <img src={aboutImage2} className="about-img img2 " alt="About 2" />
             </div>
         </section>
     );

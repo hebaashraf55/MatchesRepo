@@ -1,67 +1,43 @@
-.participants-section {
-    padding: 40px 50px; /* Space around the section */
-    margin: 50px;
-    height: 400px;
-    gap: 30px;
-    justify-content: space-between;
-    align-items: center;
-    /* background-image: url('../assets/Sparks.png');
-    background-size: cover;
-    background-position: center; */
-  }
-  
-  .arrow-col {
-    display: flex;
-    justify-content: center; /* Center the arrows vertically */
-    align-items: center; /* Center the arrows vertically */
+.participant-container {
+  padding: 50px 40px;
+  background-color: none; /* Dark background */
+  margin: 30px 30px;
+}
 
-  }
-  
-  .arrow {
-    width: 10px; /* Adjust as needed */
-    height: auto; /* Maintain aspect ratio */
-    display: none; /* Hidden by default */
-  }
-  
-  .participants-col {
-    display: flex;
-    justify-content: center; /* Center the participant images */
-    margin: 50px;
-    width: 20%;
- 
-  }
-  
-  .participants-row {
-    display: flex;
-    justify-content: space-between; /* Space between participant images */
-    gap: 30px;
-    flex-wrap: wrap; /* Allow wrapping on smaller screens */
-  }
-  
-  .participant-col {
-    display: flex;
-    justify-content: center; /* Center the images in each column */
-    margin: 20px; /* Space between images */
-  }
-  
-  .participant-image {
-    max-width: 20%; /* Responsive images */
-    height: auto; /* Maintain aspect ratio */
-  }
-  
-  /* Responsive Styles */
-  @media (max-width: 768px) {
-    .arrow {
-      display: none; /* Hide arrows on smaller screens */
-    }
-  
-    .participants-row {
-      flex-direction: column; /* Stack images vertically */
-    }
-  
-    .participant-col {
-      margin: 5px 10px; /* Space between images when stacked */
-      width: 100%; /* Full width for each participant image */
-    }
-  }
-  
+.participant-image {
+  background-image: url('../assets/Ellipse3.png') ;
+  background-size: contain; 
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 15px 30px;
+  margin: 30px 0px;
+  max-width: 100%; 
+  border-radius: 8px;
+}
+
+.participant-name {
+  color: white;
+  margin-top: 10px;
+}
+
+/* Arrow styles */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.007);
+  border: none;
+  color: white;
+  font-size: 50px;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 1;
+}
+
+.left-arrow {
+  left: 10px;
+}
+
+.right-arrow {
+  right: 10px;
+}

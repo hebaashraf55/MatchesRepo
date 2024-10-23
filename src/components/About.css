@@ -5,11 +5,10 @@
     justify-content: space-between;
     gap: 30px;
     margin-top: 40px; 
-    background-image: url('../assets/BallsPattern3.png');
-    background-position: right;
-    background-size: contain;
+    background: none;
     width: 100%;
     height: 100vh;
+    overflow: hidden;
 }
 
 /* Left Div: Text and Button */
@@ -21,9 +20,6 @@
     height: 70vh; 
 }
 
-/* .section-about {
-    background-image: url('../assets/BallsPattern.png');
-} */
 
 .about-title {
     font-size: 50px;
@@ -56,40 +52,51 @@
 /* Right Div: Images */
 .about-images {
     position: relative;
+    right: 0px;
     width: 50%; /* Adjust width as needed */
+    overflow: hidden;
 }
 
 .about-img {
-    width: 90%;
+    width: 100%;
     height: auto;
     border-radius: 8px;
 }
 
 .img1 {
-    width: 80%;
+    width: 60%;
 }
 .img2 {
     position: absolute;
-    top: 0px;
-    left: 0px;
-    right: 50px;
-    width: 150%; /* Adjust size as needed */
+    top: 50%;  
+    transform: translateY(-50%); 
+    right: -30%; 
+    height: 100%;
+    width: 120%; /* Adjust size as needed */
+    object-fit: cover;
     z-index: 1;
+    overflow: hidden; 
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
     .about-section {
         flex-direction: column;
+        height: auto;
     }
 
     .about-images {
         width: 100%;
+        height: auto;
+    }
+    .img1{
+        display: none;
     }
 
     .img2 {
         position: static;
-        margin-top: 10px;
+        margin-top: 50px;
+        width: 100%;
     }
 
     .read-more-btn {
@@ -97,3 +104,4 @@
         margin-top: 10px;
     }
 }
+

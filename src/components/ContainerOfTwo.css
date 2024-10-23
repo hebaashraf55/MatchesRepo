@@ -1,19 +1,13 @@
-.container {
-    background-image: url('../assets/SaudiFlag.png');
-    padding: 20px;
-    border-radius: 10px;
-    display: flex;
-    gap: 10px;
-    justify-content: space-between;
-    align-items: center;
+.main-container {
+  background-image: url('../assets/Sparks.png'); /* Your background image path */
+  background-size: cover; /* Cover the entire container */
+  background-position: center; /* Center the image */
+  padding: 20px; /* Padding around the container */
+  color: white; /* Text color */
+}
+
+@media (max-width: 768px) {
+  .main-container {
+    padding: 10px; /* Adjust padding for smaller screens */
   }
-  
-  .component {
-    background-color: white;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    flex: 1;
-    text-align: center;
-  }
-  
+}
